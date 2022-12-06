@@ -1,0 +1,280 @@
+{
+	"info": {
+		"_postman_id": "d4ba9e31-997a-418f-bd98-dad5e3649cf9",
+		"name": "Assesstment Test Rizky Azis",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11172995"
+	},
+	"item": [
+		{
+			"name": "produsen",
+			"item": [
+				{
+					"name": "find all produsen",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/produsen",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"produsen"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "find id produsen",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/produsen/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"produsen",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create produsen",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nama\":\"Indomaret\",\n    \"kode\":\"IDM\",\n    \"alamat\":\"Sukabirus\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/produsen/save",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"produsen",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update produsen",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nama\":\"Alfamart\",\n    \"kode\":\"AM\",\n    \"alamat\":\"Sukapura\",\n    \"id\":2\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/produsen/save",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"produsen",
+								"save"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete produsen",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/produsen/delete/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"produsen",
+								"delete",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "produk",
+			"item": [
+				{
+					"name": "find all produk",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/produk",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"produk"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "find id produk",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/produk/9",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"produk",
+								"9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create produk",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nama\":\"AQUA Gelas\",\n    \"jenis\":\"Minuman\",\n    \"berat\":\"100 Ml\",\n    \"produsen_id\":2\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/produk/create",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"produk",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update produk",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nama\":\"Rebo Kuaci XL\",\n    \"jenis\":\"Cemilan\",\n    \"berat\":\"500 Gr\",\n    \"harga\":500000,\n    \"id\":2,\n    \"produsen_id\":2\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/produk/update",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"produk",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete produk",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/produk/delete/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"produk",
+								"delete",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

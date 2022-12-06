@@ -1,4 +1,4 @@
-package com.tabeldata.bootcamp.dto;
+package assesstment.test.rizkyazis.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

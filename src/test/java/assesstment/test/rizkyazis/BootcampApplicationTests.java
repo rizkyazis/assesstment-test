@@ -1,4 +1,4 @@
-package com.tabeldata.bootcamp;
+package assesstment.test.rizkyazis;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

@@ -1,0 +1,23 @@
+datasource:
+  url: jdbc:postgresql://${DATABASE_HOST:localhost}:${DATABASE_PORT:5432}/${DATABASE_NAME:testdb}
+  username: ${DATABASE_USER:postgres}
+  password: ${DATABASE_PASSWORD:postgres}
+  driver-class-name: org.postgresql.Driver
+
+jpa:
+  generate-ddl: false
+  hibernate:
+    ddl-auto: validate
+    naming:
+      physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+  show-sql: true
+  properties:
+    hibernate:
+      dialect: org.hibernate.dialect.PostgreSQL95Dialect
+      enable_lazy_load_no_trans: true
+      id:
+        new_generator_mappings: false
+      current_session_context_class: org.springframework.orm.hibernate5.SpringSessionContext
+      globally_quoted_identifiers: true
+      temp:
+        use_jdbc_metadata_defaults: false

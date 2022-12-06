@@ -1,8 +1,8 @@
-package com.tabeldata.bootcamp.service;
+package assesstment.test.rizkyazis.service;
 
-import com.tabeldata.bootcamp.dao.ProdusenDao;
-import com.tabeldata.bootcamp.dto.ProdusenDto;
-import com.tabeldata.bootcamp.entity.Produsen;
+import assesstment.test.rizkyazis.dao.ProdukDao;
+import assesstment.test.rizkyazis.dto.ProdukDto;
+import assesstment.test.rizkyazis.entity.Produk;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.stereotype.Service;
@@ -12,26 +12,26 @@ import java.util.List;
 
 @Service
 @Transactional(readOnly = true)
-public class ProdusenService {
+public class ProdukService {
 
     @Autowired
-    private ProdusenDao dao;
+    private ProdukDao dao;
 
-    public Produsen findId(Integer id) throws EmptyResultDataAccessException {
+    public Produk findId(Integer id) throws EmptyResultDataAccessException {
         return dao.findId(id);
     }
 
-    public List<Produsen> list() {
+    public List<Produk> list(){
         return dao.list();
     }
 
     @Transactional
-    public Integer save(ProdusenDto.New value) {
+    public Integer save(ProdukDto.New value) {
         return dao.insert(value);
     }
 
     @Transactional
-    public void update(ProdusenDto.Update value){
+    public void update(ProdukDto.Update value){
         dao.update(value);
     }
 

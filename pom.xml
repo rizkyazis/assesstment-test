@@ -8,11 +8,11 @@
 		<version>2.7.1</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.tabeldata</groupId>
-	<artifactId>bootcamp</artifactId>
+	<groupId>assesstment.test</groupId>
+	<artifactId>rizkyazis</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>bootcamp</name>
-	<description>Project for bootcamp tabeldata</description>
+	<name>rizkyazis</name>
+	<description>Mini Project for assesstment</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
@@ -67,6 +67,23 @@
 			<version>1.5.2.Final</version>
 		</dependency>
 
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-entitymanager -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-entitymanager</artifactId>
+			<version>5.6.14.Final</version>
+		</dependency>
+
+		<dependency>
+			<groupId>javax.xml.bind</groupId>
+			<artifactId>jaxb-api</artifactId>
+			<version>2.3.0</version>
+		</dependency>
 
 	</dependencies>
 

@@ -1,6 +1,6 @@
-package com.tabeldata.bootcamp.dto;
+package assesstment.test.rizkyazis.dto;
 
-import com.tabeldata.bootcamp.entity.Produsen;
+import assesstment.test.rizkyazis.entity.Produsen;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

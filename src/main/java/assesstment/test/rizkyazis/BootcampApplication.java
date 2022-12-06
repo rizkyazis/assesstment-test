@@ -1,4 +1,4 @@
-package com.tabeldata.bootcamp;
+package assesstment.test.rizkyazis;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

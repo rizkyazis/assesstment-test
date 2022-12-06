@@ -1,8 +1,8 @@
-package com.tabeldata.bootcamp.dao;
+package assesstment.test.rizkyazis.dao;
 
-import com.tabeldata.bootcamp.dto.ProdukDto;
-import com.tabeldata.bootcamp.entity.Produk;
-import com.tabeldata.bootcamp.entity.Produsen;
+import assesstment.test.rizkyazis.dto.ProdukDto;
+import assesstment.test.rizkyazis.entity.Produk;
+import assesstment.test.rizkyazis.entity.Produsen;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.jdbc.core.RowMapper;

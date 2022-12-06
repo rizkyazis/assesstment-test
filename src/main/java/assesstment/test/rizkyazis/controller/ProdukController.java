@@ -1,9 +1,8 @@
-package com.tabeldata.bootcamp.controller;
+package assesstment.test.rizkyazis.controller;
 
-import com.tabeldata.bootcamp.dto.ProdukDto;
-import com.tabeldata.bootcamp.entity.Produk;
-import com.tabeldata.bootcamp.mappers.ProdukMapper;
-import com.tabeldata.bootcamp.service.ProdukService;
+import assesstment.test.rizkyazis.dto.ProdukDto;
+import assesstment.test.rizkyazis.entity.Produk;
+import assesstment.test.rizkyazis.service.ProdukService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.EmptyResultDataAccessException;
